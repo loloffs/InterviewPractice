@@ -12,15 +12,6 @@
 // console.log(isPalindrome('Anna'))
 
 
-
-
-
-
-
-
-
-
-
 const palindrome = function(word) {
   word = word.toString().toLowerCase();
   const reversedWord = word.split('').reverse().join('')

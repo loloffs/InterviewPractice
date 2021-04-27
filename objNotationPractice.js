@@ -72,8 +72,6 @@ const goalDifferential = function(teams) {
 // console.log("Goal differential: ", goalDifferential(teams));
 
 
-
-
 // The Vancouver Canucks top scorer last season was Elias Pettersson with 70 points.
 
 const sentence = function(teams) {
