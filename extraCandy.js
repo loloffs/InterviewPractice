@@ -1,6 +1,5 @@
 // From Leetcode
 
-
 // Given the array candies and the integer extraCandies, 
 // where candies[i] represents the number of candies that the 
 // ith kid has.
@@ -34,3 +33,7 @@ const kidsWithCandies = function(candies, extraCandies) {
   }
   return result
 }
+
+console.log(kidsWithCandies([2,3,5,1,3], 3));
+
+// output: [ true, true, true, false, true ]
