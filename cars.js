@@ -31,7 +31,14 @@ const allCars = {
            year: 2009,
            odometer: 246000,
            price: 12000
-         }
+         }, 
+         5: {
+          make: "BMW",
+          model: "X1",
+          year: 2014,
+          odometer: 54000,
+          price: 15000
+        },
      },
  
    new: {
@@ -60,7 +67,7 @@ const allCars = {
          }
      },
  
-     findCar: function(newOrUsed, maxPrice) {
+     findCarByPrice: function(newOrUsed, maxPrice) {
        newOrUsed.toString();
        let result = []
        for (const key in this[newOrUsed]) {
@@ -69,6 +76,13 @@ const allCars = {
          }
        }
        return result;
+     },
+     findCarByYear: function(min, max) {
+      // min.toString();
+      // max.toString();
+      for (const key in this) {
+        console.log(key);
+      }
      }
  }
  
@@ -84,4 +98,5 @@ const allCars = {
  //   return result;
  // }
  
- console.log(allCars.findCar("new", 30000));
+//  console.log(allCars.findCarByPrice("new", 30000));
+ console.log(allCars.findCarByYear());
