@@ -80,8 +80,8 @@ const allCars = {
      findCarByYear: function(min, max) {
       // min.toString();
       // max.toString();
-      for (const key in this) {
-        console.log(key);
+      for (const key in this.used) {
+        console.log(`${key.make}`);
       }
      }
  }
