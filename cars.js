@@ -66,6 +66,13 @@ const allCars = {
            price: 30000
          }
      },
+
+     getAllCars: function(newOrUsed) {
+      newOrUsed.toString();
+      let result = []
+      for (const key in this["used"]) {
+//
+     },
  
      findCarByPrice: function(newOrUsed, maxPrice) {
        newOrUsed.toString();
