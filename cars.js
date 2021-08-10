@@ -67,13 +67,16 @@ const allCars = {
          }
      },
 
-     getAllCars: function(newOrUsed) {
-      newOrUsed.toString();
-      let result = []
+     getAllCars: function() {
+      let allCars = []
       for (const key in this["used"]) {
-//
-     },
- 
+        allCars.push(`${this["used"][key].year} ${this["used"][key].make}, ${this["used"][key].model}`);
+      }
+      for (const key in this["new"]) {
+        allCars.push(`${this["new"][key].year}, ${this["new"][key].make}, ${this["new"][key].model}`);
+      }
+      return allCars;
+    },
      findCarByPrice: function(newOrUsed, maxPrice) {
        newOrUsed.toString();
        let result = []
@@ -84,13 +87,13 @@ const allCars = {
        }
        return result;
      },
-     findCarByYear: function(min, max) {
-      // min.toString();
-      // max.toString();
-      for (const key in this.used) {
-        console.log(`${key.make}`);
-      }
-     }
+    //  findCarByYear: function(min, max) {
+    //   // min.toString();
+    //   // max.toString();
+    //   for (const key in this.used) {
+    //     console.log(`${key.make}`);
+    //   }
+    //  }
  }
  
  
@@ -105,5 +108,6 @@ const allCars = {
  //   return result;
  // }
  
-//  console.log(allCars.findCarByPrice("new", 30000));
- console.log(allCars.findCarByYear());
+ console.log(allCars.findCarByPrice("new", 30000));
+//  console.log(allCars.findCarByYear());
+console.log(allCars.getAllCars());
